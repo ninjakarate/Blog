@@ -8,7 +8,6 @@
 </template>
 
 <script setup lang="ts">
-import PostsList from '@/components/PostsList.vue';
 import axios from 'axios';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';

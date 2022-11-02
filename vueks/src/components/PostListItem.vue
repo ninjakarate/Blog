@@ -2,11 +2,11 @@
     <div class="post">
         <a>
             {{ post.title }}
-            <button @click="emit('click:edit', post)">
-                edit
-            </button>
             <button @click="emit('click:delete', post)">
                 delete
+            </button>
+            <button @click="emit('click:edit', post)">
+                edit
             </button>
         </a>
     </div>
@@ -17,8 +17,8 @@ import type { PostItem } from '@/types/PostItem'
 defineProps<{ post: PostItem }>();
 
 const emit = defineEmits<{
-  (e: 'click:delete', post: PostItem): void
-  (e: 'click:edit', post: PostItem): void
+    (e: 'click:delete', post: PostItem): void
+    (e: 'click:edit', post: PostItem): void
 }>()
 
 </script>

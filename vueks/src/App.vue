@@ -1,7 +1,8 @@
 <template>
-    <router-link :to="{ name: 'index' }">Go to Home</router-link>
-    <br>
-    <router-link :to="{ name: 'add-post' }">Go to Add</router-link>
+    <div class="nav">
+        <router-link :to="{ name: 'index' }">Home</router-link>
+        <router-link :to="{ name: 'add-post' }">Add Post</router-link>
+    </div> 
     <RouterView />
 </template>
 
@@ -10,6 +11,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <style scoped>
+a {
+    margin: 10px;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;

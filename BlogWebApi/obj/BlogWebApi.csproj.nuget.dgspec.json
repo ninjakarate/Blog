@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilya3\\BlogWebApi\\BlogWebApi.csproj": {}
+    "C:\\Users\\ilya3\\Blog\\BlogWebApi\\BlogWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilya3\\BlogWebApi\\BlogWebApi.csproj": {
+    "C:\\Users\\ilya3\\Blog\\BlogWebApi\\BlogWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilya3\\BlogWebApi\\BlogWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\ilya3\\Blog\\BlogWebApi\\BlogWebApi.csproj",
         "projectName": "BlogWebApi",
-        "projectPath": "C:\\Users\\ilya3\\BlogWebApi\\BlogWebApi.csproj",
+        "projectPath": "C:\\Users\\ilya3\\Blog\\BlogWebApi\\BlogWebApi.csproj",
         "packagesPath": "C:\\Users\\ilya3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilya3\\BlogWebApi\\obj\\",
+        "outputPath": "C:\\Users\\ilya3\\Blog\\BlogWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilya3\\AppData\\Roaming\\NuGet\\NuGet.Config"
