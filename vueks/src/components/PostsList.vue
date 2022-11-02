@@ -3,8 +3,9 @@
         <PostListItem v-for="post in posts" 
             :key="post.id"
             :post="post"
-           @click:delete="deletePost(post)"
-           @click:edit="editPost(post)"
+            @click:delete="deletePost(post)"
+            @click:edit="editPost(post)"
+            @click:read="readPost(post)"
         />
     </section>
 </template>
@@ -33,6 +34,10 @@ const deletePost = async (post: PostItem) => {
 
 const editPost = async (post: PostItem) => {
     router.push({ name: 'edit-post', params: { id: post.id } });
+};
+
+const readPost = async (post: PostItem) => {
+    router.push({ name: 'read-post', params: { id: post.id } });
 };
 
 </script>

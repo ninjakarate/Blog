@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import BlogView from '../views/BlogView.vue'
 import PostAddView from '../views/PostAddView.vue'
 import PostEditView from '@/views/PostEditView.vue'
-
+import PostReadView from '@/views/PostReadView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,15 +23,15 @@ const router = createRouter({
             component: PostEditView,
 
             props: true,
-            // props: route => ({ id: route.path.split('/').at(-1) })
+        },
+        {
+            path: '/read/:id',
+            name: 'read-post',
+            component: PostReadView,
+
+            props: true,
         },
     ], 
-})
-
-// router.push({ name: 'song-page', params: { id: 47 } })
-
-// SongPage.vue
-// <script>
-// defineProps<{ id: number }>();
+});
 
 export default router

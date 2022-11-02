@@ -1,6 +1,6 @@
 <template>
     <div class="post">
-        <a>
+        <a @click="emit('click:read', post)">
             {{ post.title }}
             <button @click="emit('click:delete', post)">
                 delete
@@ -19,6 +19,7 @@ defineProps<{ post: PostItem }>();
 const emit = defineEmits<{
     (e: 'click:delete', post: PostItem): void
     (e: 'click:edit', post: PostItem): void
+    (e: 'click:read', post: PostItem): void
 }>()
 
 </script>

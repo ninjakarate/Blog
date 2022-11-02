@@ -22,7 +22,9 @@ public class BlogPostController : ControllerBase
             {
                 Id = p.Id,
                 Title = p.Title,
-            }).ToArray();
+            })
+            .OrderBy(p => p.Id)
+            .ToArray();
     }
 
     [HttpGet("{id}")]
